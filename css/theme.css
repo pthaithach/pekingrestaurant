@@ -449,7 +449,12 @@ a.text-dark:hover, a.text-dark:focus {
 .show > .btn-danger.dropdown-toggle:focus {
   box-shadow: none;
 }
-
+.text-phone{
+  color: #fbfb1c;
+}
+.text-reservation:hover{
+  color: #fbfb1c !important;
+}
 .btn-light {
   color: #343531;
   background-color: #F5F9F6;
@@ -1161,7 +1166,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .page-hero {
   position: relative;
-  height: 600px;
+  height: 400px;
   z-index: 10;
 }
 
@@ -1302,6 +1307,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .card-doctor:hover .header::before {
   opacity: 1;
+  background-color: transparent;
 }
 
 .card-doctor .header .meta {
@@ -1343,7 +1349,9 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #fff;
   color: #52b7de;
 }
-
+.meta{
+  display: none;
+}
 .card-doctor .header img {
   width: 100%;
 }
@@ -1758,6 +1766,9 @@ a.phone-call:hover{
   text-decoration: none;
     color: #52b7de;
 }
+.footer-sosmed{
+  display: none;
+}
 
 .contact-form {
   display: block;
@@ -1997,6 +2008,8 @@ footer .margin-bottom{
 .card-service p, .card-service a.phone-call{
   margin-left: 10px;
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
 }
 .navbar-light .navbar-toggler{
     color: #fff;
@@ -2142,10 +2155,20 @@ footer .margin-bottom{
   .site-info{
     text-align: left;
   }
-  .card-service p, .card-service a.phone-call{
-    margin-left: -15px ;
-    font-size: 18px;
+  .card-service p{
+    margin-left: -20px ;
+    font-size: 16px;
+    font-weight: bold;
   }
+  .card-service a.phone-call{
+    margin-left: -20px ;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .card-service a.phone-call:hover{
+    color: #f0f440;
+  }
+
   .card-service {
     /*width: 260px;*/
     padding: 12px;
@@ -2153,9 +2176,9 @@ footer .margin-bottom{
   .circle-shape {
     flex-shrink: 0;
     padding: 0;
-    width: 65px;
-    height: 65px;
-    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
     border-radius: 50%;
     text-align: center;
     font-size: 21px;
@@ -2184,6 +2207,12 @@ footer .margin-bottom{
   .phone-circle, .email-circle{
     margin-top: 0;
   }
+  .btn.booking-big {
+    font-size: 20px !important;
+  }
+  .page-hero {
+    height: 500px;
+  }
 
 }
 
@@ -2209,7 +2238,7 @@ footer .margin-bottom{
     padding: 15px 20px;
   }
   .circle-shape img {
-    margin-left: 0;
+    margin-left: -73px;
   }
   .card-service p, a.phone-call{
     margin-left: 15px;
@@ -2221,9 +2250,9 @@ footer .margin-bottom{
 
 @media (min-width: 1024px){
   .circle-shape {
-    width: 90px;             /* width: 40px;*/
-    height: 90px;
-    line-height: 45px;
+    width: 70px;             /* width: 40px;*/
+    height: 70px;
+    line-height: 60px;
     font-size: 23px;
   }
   .card-service {
@@ -2248,8 +2277,14 @@ footer .margin-bottom{
   .page-section{
     padding-top: 80px;
   }
-  .card-service p, .card-service a.phone-call {
-     margin-left: 10px;
+  .card-service p {
+    margin-left: -30px;
+  }
+  .card-service a.phone-call {
+     margin-left: -10px;
+  }
+  .page-hero {
+    height: 600px;
   }
 }
 
@@ -2279,7 +2314,10 @@ footer .margin-bottom{
 
 
 @media (min-width: 1440px){
-  .card-service p, .card-service a.phone-call {
+  .card-service p{
+    font-size: 22px;
+  }
+  .card-service a.phone-call {
     font-size: 25px;
   }
   .book-appt{
